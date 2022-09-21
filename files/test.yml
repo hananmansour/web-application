@@ -1,0 +1,8 @@
+---
+- name: playbook to run docker web app
+  hosts: 172.31.87.245 
+
+  tasks:
+    - name: create new container
+      shell: docker run -d -p 3000:3000  12345676700/app  
+
